@@ -255,6 +255,7 @@ footer a {
   }
   .span-baffo {
     position: relative;
+    white-space: nowrap;
   }
   .span-baffo img {
     display: inline;
@@ -262,12 +263,12 @@ footer a {
     width: 100%;
     bottom: -7px;
     border: none;
+    opacity: 0.6;
   }
   footer button {
-    width: 20px;
-    height: 20px;
+    
     background: transparent;
-    padding: 4%;
+    padding: 10px;
     box-shadow: 0px 2px 5px;
     border: 2px solid white;
     justify-content: center;
@@ -302,16 +303,19 @@ footer a {
   }
   .button-plus {
     position: absolute;
-    bottom: 50px;
+    bottom: 35%;
     right: -25px;
   }
-  #cards div{
+ 
+  aside  div{
     position: relative;
   }
-  #cards .fas fa-tag{
+  .fas.fa-tag{
     position: absolute;
-    top: 0;
-    right: 0;
+    right: 2%;
+    top: 5%;
+    font-size: 4em;
+    color: #b9b9b9;
   }
 }
 @media screen and (min-width: 768px) {
@@ -344,10 +348,7 @@ footer a {
     height: 40px;
     width: 65%;
   }
-  button {
-    height: 40px;
-    width: 30%;
-  }
+  
   .span-baffo {
     position: relative;
   }
@@ -359,10 +360,9 @@ footer a {
     border: none;
   }
   footer button {
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    padding: 4%;
+    
+    background-color:#f4f4f3bd;
+    padding: 10px;
     box-shadow: 0px 2px 5px;
     border: 2px solid white;
     justify-content: center;
@@ -370,8 +370,9 @@ footer a {
     text-align: center;
     display: flex;
     border-radius: 10px;
-    backdrop-filter: blur(100px); /* Sfocatura dello sfondo */
+    backdrop-filter: blur(3.5px); /* Sfocatura dello sfondo */
     cursor: pointer;
+    
   }
   .button-callendar {
     position: fixed;
@@ -381,10 +382,10 @@ footer a {
   }
   .button-callendar i {
     color: #3f6bca;
-    font-size: 20px;
+    font-size: 25px;
   }
   .button-play i {
-    font-size: 20px;
+    font-size: 25px;
     color: red;
   }
   .button-play {
@@ -394,7 +395,7 @@ footer a {
     z-index: 3;
   }
   .button-plus i {
-    font-size: 20px;
+    font-size: 25px;
     color: #3f6bca;
   }
   .button-plus {
@@ -402,6 +403,7 @@ footer a {
     top: 10%;
     right: 0px;
     z-index: 3;
+    bottom: unset;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -465,7 +467,7 @@ footer a {
     height: 40px;
     width: 69%;
   }
-  button {
+  fieldset button {
     height: 40px;
     width: 30%;
   }
